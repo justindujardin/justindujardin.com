@@ -2,7 +2,7 @@
    "globals": {
       "name"  : "Justin DuJardin",
       "description": "stuff and things",
-      "url": "/a",
+      "url": "/a/",
       "githubUrl":"https://github.com/justindujardin",
       "twitterUrl":"https://twitter.com/justindujardin"
    }
