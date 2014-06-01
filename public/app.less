@@ -4,7 +4,8 @@
 @import "style/variables";
 
 @import "style/code";
-@import "style/tympanus";
+
+@import "partials/_header";
 
 @import "articles/_layout";
 @import "pages/_layout";
@@ -13,6 +14,12 @@
 
 ::-moz-selection { background: @background-contrast-color; color: #fff; text-shadow: none; }
 ::selection { background: @background-contrast-color; color: #fff; text-shadow: none; }
+
+svg {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -40,36 +47,9 @@ html {
   overflow-x:hidden !important;
   body {
     overflow-x:hidden !important;
-    #header {
-      position: relative;
-      margin: 0;
-      background: @background-base-color;
-      background-size: cover;
-      background-position: center center;
-      padding: @header-padding;
-      text-align: center;
-      color: @font-color;
-      a {
-        color:@font-color;
-        &:hover {
-          text-decoration: none;
-        }
-      }
-      header > h1 {
-        font-weight: 200;
-      }
-      footer > h2 {
-        font-weight: 100;
-        font-size: 2em;
-        .opacity(0.7);
-      }
-      section {
-        padding: @section-padding;
-        background-color: @background-base-color;
-      }
-    }
   }
 }
+
 body {
   > svg.triangleDown {
     margin-top:-1px;
@@ -97,12 +77,17 @@ body {
 }
 
 body.index {
+  > svg.triangleDown {
+    fill:@background-base-color;
+    background-color: @background-darker;
+  }
+
   section {
     a {
       color:@font-color;
     }
     p {
-//      color: rgba(0,0,0,.3);
+      //      color: rgba(0,0,0,.3);
     }
   }
 }
@@ -114,13 +99,14 @@ main {
     content: '';
     pointer-events: none;
   }
-  .diagonal-before;
+  z-index: 1;
+  background: @background-darker;
   section {
     position: relative;
     padding: @section-padding;
     text-align: center;
   }
-  .summary {
+  .page-summary {
     z-index: 1;
     text-transform: lowercase;
     h1 {
@@ -131,7 +117,7 @@ main {
     a {
       &:hover {
         text-decoration: none;
-          color: darken(@font-color,15%);
+        color: darken(@font-color,15%);
       }
     }
     p{
@@ -144,7 +130,7 @@ main {
     }
 
     &:nth-child(2){
-      background-color: rgba(0,0,0,0.3);
+      background-color: @background-darkest;
       box-shadow: inset 0 1px 0 rgba(0,0,0,0.1),inset 0 -1px 0 rgba(0,0,0,0.2);
     }
 

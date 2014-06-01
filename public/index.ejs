@@ -3,7 +3,7 @@
 for(key in public.pages._data) {
     var article = public.pages._data[key];
 %>
-<section class="summary <%- odd ? ' odd' : ' even'%><%- first ? ' first':' not-first'%>">
+<section class="page-summary<%- odd ? ' odd' : ' even'%><%- first ? ' first':' not-first'%>">
     <header>
         <h1><a href="/pages/<%- key %>.html"><%- article.title %></a></h1>
     </header>
