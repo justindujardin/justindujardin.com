@@ -5,7 +5,7 @@ for(key in public.pages._data) {
 %>
 <section class="page-summary<%- odd ? ' odd' : ' even'%><%- first ? ' first':' not-first'%>">
     <header>
-        <h1><a href="/pages/<%- key %>.html"><%- article.title %></a></h1>
+        <h1><a href="<%-url%>/pages/<%- key %>.html"><%- article.title %></a></h1>
     </header>
     <footer>
         <p><%- article.blurb || ''%></p>
