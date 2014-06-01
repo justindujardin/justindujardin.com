@@ -1,3 +1,14 @@
-<section class="container" style="min-height: 300px;text-align: center;">
-    <h1 style="font-weight:200;margin-top:250px;">TODO: This.</h1>
+
+<%
+for(key in public.articles._data) {
+    var article = public.articles._data[key];
+%>
+<section class="blog-summary">
+    <header>
+        <h1><a href="/articles/<%- key %>.html"><%- article.title %></a></h1>
+    </header>
+    <footer>
+        <p><%- article.blurb || ''%></p>
+    </footer>
 </section>
+<% } %>

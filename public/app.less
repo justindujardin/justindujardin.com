@@ -26,8 +26,9 @@
 @section-padding:6em 10%;
 
 html {
+  overflow-x:hidden !important;
   body {
-    overflow-x:hidden;
+    overflow-x:hidden !important;
     #header {
       position: relative;
       margin: 0;
@@ -172,7 +173,7 @@ main {
 
 }
 
-body.article {
+body.page {
   #header {
     padding-bottom:3em;
     padding-top:5em;
@@ -192,7 +193,24 @@ body.article {
       color:inherit;
     }
   }
+  .blog-summary {
+    padding:1em 0;
+    text-align:center;
+    a {
+      font-weight:200;
+    }
+  }
 
+}
+
+body.article {
+  #header {
+    padding-bottom:3em;
+    padding-top:5em;
+  }
+  > svg.triangleDown {
+    fill:@background-base-color;
+  }
 }
 
 
