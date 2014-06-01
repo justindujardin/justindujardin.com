@@ -1,0 +1,9 @@
+{
+   "globals": {
+      "name"  : "Justin DuJardin",
+      "description": "Stuff and Things",
+      "url": "http://justin-d.com/blog",
+      "githubUrl":"https://github.com/justindujardin",
+      "twitterUrl":"https://twitter.com/justindujardin"
+   }
+}

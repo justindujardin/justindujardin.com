@@ -1,0 +1,19 @@
+<html>
+<head>
+    <%- partial('../partials/_headMeta.ejs') %>
+	<link rel="stylesheet" href="/app.css" />
+</head>
+
+<body class="article">
+
+<%- partial('../partials/_header.ejs') %>
+
+<%- partial('../partials/shapes/_triangleDown.ejs') %>
+<section class="container" id="article">
+    <%- yield %>
+</section>
+
+<%- partial('../partials/_footer.ejs') %>
+
+</body>
+</html>

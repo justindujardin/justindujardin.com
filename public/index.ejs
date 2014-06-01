@@ -1,0 +1,16 @@
+
+<% var odd = false; var first=true;
+for(key in public.pages._data) {
+    var article = public.pages._data[key];
+%>
+<section class="summary <%- odd ? ' odd' : ' even'%><%- first ? ' first':' not-first'%>">
+    <header>
+        <h1><a href="/pages/<%- key %>.html"><%- article.title %></a></h1>
+    </header>
+    <footer>
+        <p><%- article.blurb || ''%></p>
+    </footer>
+</section>
+<% odd = !odd; first = false; } %>
+
+<!-- <\%- partial('articles/article.md') %\> -->

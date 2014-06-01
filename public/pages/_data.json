@@ -1,0 +1,18 @@
+{
+	"blog":{
+		"title":"Blog",
+      "blurb":"You know, thoughts and ideas, blurbs and rants.  That kind of stuff."
+	},
+   "pow2":{
+		"title":"pow2!",
+      "blurb":"A 2D FinalFantasy inspired RPG game made with Node, AngularJS, and Typescript"
+	},
+   "pow-edit":{
+		"title":"pow-edit",
+      "blurb":"Tilemap editor written in Typescript with AngularJS and Node"
+	},
+	"about":{
+		"title":"Celery Quandong Swiss",
+      "blurb":"Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify."
+	}
+}
