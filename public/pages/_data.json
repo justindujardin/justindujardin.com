@@ -1,11 +1,11 @@
 {
 	"blog":{
-		"title":"Blog",
-      "blurb":"You know, thoughts and ideas, blurbs and rants.  That kind of stuff."
+		"title":"blog",
+		"blurb":"in which I write about things, mostly code."
 	},
    "pow2":{
-		"title":"pow2!",
-      "blurb":"A 2D FinalFantasy inspired RPG game made with Node, AngularJS, and Typescript"
+		"title":"pow2",
+      "blurb":"A 2D RPG game made built on Node, with Typescript, and LESS, using AngularJS"
 	},
    "pow-edit":{
 		"title":"pow-edit",
@@ -13,6 +13,6 @@
 	},
 	"about":{
 		"title":"about",
-      "blurb":"It's Lorem Ipsum.."
+      "blurb":"It's Lorem Ipsum..."
 	}
 }
