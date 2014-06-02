@@ -13,8 +13,9 @@
       "blurb":"Tilemap editor written in Typescript with AngularJS and Node",
       "github":"https://github.com/justindujardin/pow-edit"
 	},
-	"about":{
-		"title":"about",
-      "blurb":"It's Lorem Ipsum..."
+   "acl":{
+		"title":"acl",
+      "blurb":"Cross platform C/C++ application core library",
+      "github":"https://github.com/justindujardin/acl"
 	}
 }
