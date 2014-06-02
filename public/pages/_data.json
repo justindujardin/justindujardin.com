@@ -5,11 +5,13 @@
 	},
    "pow2":{
 		"title":"pow2",
-      "blurb":"A 2D RPG game made built on Node, with Typescript, and LESS, using AngularJS"
+      "blurb":"A 2D RPG game made built on Node, with Typescript, and LESS, using AngularJS",
+      "github":"https://github.com/justindujardin/pow2"
 	},
    "pow-edit":{
 		"title":"pow-edit",
-      "blurb":"Tilemap editor written in Typescript with AngularJS and Node"
+      "blurb":"Tilemap editor written in Typescript with AngularJS and Node",
+      "github":"https://github.com/justindujardin/pow-edit"
 	},
 	"about":{
 		"title":"about",

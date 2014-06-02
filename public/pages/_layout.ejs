@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <%- partial('../partials/_headMeta.ejs') %>
 </head>
@@ -9,6 +10,9 @@
 
 <%- partial('../partials/shapes/_triangleDown.ejs') %>
 <section class="container" id="article">
+    <% var data = public.pages._data[current.source]; if(data && data.github){ %>
+    <a class="project-link" title="View project on Github" href="<%- data.github %>" target="_blank"><i class="fa fa-github"></i></a>
+    <%}%>
     <%- yield %>
 </section>
 

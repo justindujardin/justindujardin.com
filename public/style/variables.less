@@ -1,5 +1,5 @@
 
-@background-base-color: #2980b9;
+@background-base-color: #009be9; // #2980B9 - blue, #9947b7 - purple
 
 @background-dark:darken(@background-base-color,3%);
 @background-darker:darken(@background-base-color,10%);
@@ -12,14 +12,14 @@
 @background-contrast-color:spin(@background-base-color,180%);
 
 @font-color:#fff;
-@footer-color: #214f78;
+@footer-color: @background-darker;
 @font-color-alt: @footer-color;
 
 @link-color:rgba(red(@background-base-color), green(@background-base-color), blue(@background-base-color), 0.7);
 
 
 @header-padding:5em 0 3em 0;
-@footer-padding:5em 0 5em 0;
+@footer-padding:3em 0 5em 0;
 @section-padding:6em 10%;
 
 
