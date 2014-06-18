@@ -5,17 +5,17 @@
 	},
    "pow2":{
 		"title":"pow2",
-      "blurb":"A 2D RPG game made built on Node, with Typescript, and LESS, using AngularJS",
+      "blurb":"A 2D RPG game written in Typescript, using LESS and AngularJS, that deploys to Heroku",
       "github":"https://github.com/justindujardin/pow2"
 	},
    "pow-edit":{
 		"title":"pow-edit",
-      "blurb":"Tilemap editor written in Typescript with AngularJS and Node",
+      "blurb":"A tilemap editor written in Typescript, using LESS and AngularJS, that runs as both a native application and a deployed website",
       "github":"https://github.com/justindujardin/pow-edit"
 	},
    "acl":{
 		"title":"acl",
-      "blurb":"Cross platform C/C++ application core library",
+      "blurb":"A cross-platform C/C++ application core library, that is continuously tested on Windows, Mac and Linux",
       "github":"https://github.com/justindujardin/acl"
 	}
 }
