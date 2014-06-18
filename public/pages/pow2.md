@@ -1,6 +1,6 @@
 # Pow2 [![Build Status](https://secure.travis-ci.org/justindujardin/pow2.png)](http://travis-ci.org/justindujardin/pow2)
 
-Pow is going to be a real game one day.  For now it's an experimental Typescript/AngularJS RPG game.
+Pow is going to be a real game one day.  For now it's an <a href="//pow2.herokuapp.com" target="_blank">experimental Typescript/AngularJS RPG game</a>.
 
 > You need to have Node.JS and Grunt.JS installed, and a basic familiarity with executing commands in your system terminal.
 
