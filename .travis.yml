@@ -9,7 +9,7 @@ env:
     - secure: Vb8plC/X1ygiFTgXc3kJoAB813XOGw/fwN1xJavVdJ4lRkH0IewmChvrkA2teVfT/CcudyHtAAEYp16MUYkVVxB8kbTP6LveXF8Zort77Mh2bjBJQ/ybpOWak4UaLEWA+s+3GEL8/BmdW+vkzpHiZ/r8NWCDjUwfY+8z5Iiissk=
 
 before_install:
-  - apt-get install ncftp
+  - sudo apt-get install ncftp
 
 before_script:
   - npm install
