@@ -1,18 +1,29 @@
-@import "_bower/bootstrap/less/bootstrap.less";
 @import "style/variables";
-
 @import "style/code";
-
 @import "partials/_header";
 @import "partials/_footer";
-
 @import "articles/_layout";
 @import "pages/_layout";
 
+// Opacity
+.opacity(@opacity) {
+  opacity: @opacity;
+  // IE8 filter
+  @opacity-ie: (@opacity * 100);
+  filter: ~"alpha(opacity=@{opacity-ie})";
+}
 
+::-moz-selection {
+  background: @background-contrast-color;
+  color: #fff;
+  text-shadow: none;
+}
 
-::-moz-selection { background: @background-contrast-color; color: #fff; text-shadow: none; }
-::selection { background: @background-contrast-color; color: #fff; text-shadow: none; }
+::selection {
+  background: @background-contrast-color;
+  color: #fff;
+  text-shadow: none;
+}
 
 svg {
   -moz-user-select: none;
@@ -27,37 +38,38 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: @footer-height + @footer-spacing;
 }
+
 #footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height:@footer-height;
+  height: @footer-height;
 }
-
 
 html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  overflow-x:hidden !important;
+  overflow-x: hidden !important;
   body {
-    overflow-x:hidden !important;
+    overflow-x: hidden !important;
   }
 }
 
 body {
   > svg.triangleDown {
-    margin-top:-1px;
+    margin-top: -1px;
   }
 
   section {
     font-family: 'Roboto', sans-serif;
     position: relative;
-    &::before,&::after{
+    &::before, &::after {
       position: absolute;
       content: '';
       pointer-events: none;
@@ -76,16 +88,16 @@ body {
 }
 
 body.index {
-//  background-color:@background-darker;
+  //  background-color:@background-darker;
   aside svg.triangleDown {
     background-color: @background-darker;
   }
   main {
-    margin-top:-5px;// HACKS
+    margin-top: -5px; // HACKS
   }
   section {
     a {
-      color:@font-color;
+      color: @font-color;
     }
     p {
       //      color: rgba(0,0,0,.3);
@@ -95,7 +107,7 @@ body.index {
 
 main {
   position: relative;
-  &::before,&::after{
+  &::before, &::after {
     position: absolute;
     content: '';
     pointer-events: none;
@@ -111,60 +123,60 @@ main {
     z-index: 1;
     text-transform: lowercase;
     h1 {
-      color: rgba(255,255,255,0.95);
+      color: rgba(255, 255, 255, 0.95);
       font-size: 2.8em;
       font-weight: 400;
     }
     a {
       &:hover {
         text-decoration: none;
-        color: darken(@font-color,15%);
+        color: darken(@font-color, 15%);
       }
     }
-    p{
-      color: rgba(255,255,255,0.6);
-      text-shadow: -1px -1px rgba(0,0,0,0.1);
+    p {
+      color: rgba(255, 255, 255, 0.6);
+      text-shadow: -1px -1px rgba(0, 0, 0, 0.1);
     }
 
     footer {
-      margin-bottom:2em;
+      margin-bottom: 2em;
     }
 
-    &:nth-child(2){
+    &:nth-child(2) {
       background-color: @background-darkest;
-//      padding-bottom:4em;
-//      &::after {
-//        right: 0;
-//        left: 0;
-//        z-index: 10;
-//        display: block;
-//        height: 50px;
-//        background-size: 50px 100%;
-//        top: 100%;
-//        background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, @background-darkest), color-stop(0.25, @background-darkest));
-//        background-image:
-//            linear-gradient(135deg, @background-darkest 25%, transparent 25%),
-//            linear-gradient(225deg, @background-darkest 25%, transparent 25%);
-//        background-position: 50%;
-//      }
+    }
+    &:nth-child(3) {
+      background-color: @background-darker;
+    }
+    &:nth-child(4) {
+      background-color: @background-darkest;
+    }
+    &:nth-child(5) {
+      background-color: @background-darker;
+    }
+    &:nth-child(6) {
+      background-color: @background-darkest;
+    }
+    &:nth-child(7) {
+      background-color: @background-darker;
     }
 
-    &:last-child{
-      background:none;
+    &:last-child {
+      background: none;
       background-color: @font-color;
       padding-bottom: 1em;
-      &::before,&::after {
-        background:none;
+      &::before, &::after {
+        background: none;
       }
       a {
-        color:@font-color-alt;
+        color: @font-color-alt;
         &:hover {
-          color: darken(@font-color-alt,15%);
+          color: darken(@font-color-alt, 15%);
         }
       }
-      p{
-        color: rgba(red(@font-color-alt),green(@font-color-alt),blue(@font-color-alt),0.8);
-        text-shadow: -1px -1px rgba(0,0,0,0.1);
+      p {
+        color: rgba(red(@font-color-alt), green(@font-color-alt), blue(@font-color-alt), 0.8);
+        text-shadow: -1px -1px rgba(0, 0, 0, 0.1);
       }
     }
   }

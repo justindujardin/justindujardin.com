@@ -1,0 +1,23 @@
+{
+  "name": "justindujardin.com",
+  "version": "0.0.0",
+  "description": "Personal site of Justin DuJardin",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "sh deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/justindujardin/justindujardin.com.git"
+  },
+  "author": "Justin DuJardin <justin@dujardinconsulting.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justindujardin/justindujardin.com.git)/issues"
+  },
+  "homepage": "https://github.com/justindujardin/justindujardin.com.git)",
+  "dependencies": {
+    "harp": "git+https://github.com/justindujardin/harp.git",
+    "bower": "1.4.1"
+  }
+}

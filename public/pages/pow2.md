@@ -1,12 +1,8 @@
-# Pow2 [![Build Status](https://secure.travis-ci.org/justindujardin/pow2.png)](http://travis-ci.org/justindujardin/pow2)
+# Pow2 [![Build Status](https://travis-ci.org/justindujardin/pow2.svg?branch=master)](https://travis-ci.org/justindujardin/pow2) [![Coverage Status](https://img.shields.io/coveralls/justindujardin/pow2.svg)](https://coveralls.io/r/justindujardin/pow2?branch=master)
 
-Pow is going to be a real game one day.  For now it's an <a href="//pow2.herokuapp.com" target="_blank">experimental Typescript/AngularJS RPG game</a>.
+Pow is going to be a real game one day.  For now it's an experimental Typescript/AngularJS RPG game.
 
 > You need to have Node.JS and Grunt.JS installed, and a basic familiarity with executing commands in your system terminal.
-
-## Getting Started
-
-You should really only need Node.JS and Grunt.  Let's do it:
 
 ### Node.JS
 
@@ -47,4 +43,4 @@ can edit your files and refresh your webpage a few moments later when the new bu
 
 ### Committing
 
-Commit messages should [follow conventions](https://github.com/justindujardin/pow2/blob/master/CONVENTIONS.md)
+Commit messages should [follow conventions](https://github.com/justindujardin/pow2/blob/develop/CONVENTIONS.md)

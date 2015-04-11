@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <%- partial('../partials/_head.ejs') %>
+  <%- partial('../partials/_head.ejs') %>
 </head>
 
 <body class="article">
@@ -9,11 +9,11 @@
 <%- partial('../partials/_header.ejs') %>
 
 <section class="container" id="article">
-    <%- yield %>
+  <%- yield %>
 </section>
 
 <section class="container" id="comments">
-    <%- partial('../partials/_disqus.ejs') %>
+  <%- partial('../partials/_disqus.ejs') %>
 </section>
 
 <%- partial('../partials/_footer.ejs') %>

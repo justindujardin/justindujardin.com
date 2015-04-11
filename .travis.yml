@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - "0.10"
+
+env:
+  global:
+    - secure: Pho0BQ57Qkt8CVk5WZPre4OOdMmdYPdkhZ5Iw0L8ljMTgFlxmpRdWH8KuegOOReo55QS9PR59RX0tucfyZf3ZWSvBt7Ppu+5nzNqeVuHY9B+V9TcGKJ8/mRwcWeMtLOCqiEkE9FvzzDWT8GAbIvTdJPm3a9BaQOu0VjgUmk6QSc=
+    - secure: XZ7hStzIKlqFFeJw0Ns4/YD1KISijJS2DqIr6JPObq0Ipao8C42l6lbkDDdK3f75aUsOm2Gbl6QbHvkS9HMd+O241qi5eCoJKPcGrReue2J2XHt7ZmnSaY4DyyDBvZgnuGskIwVi6T4raARK3WKoiZGSFXY9e7sy+xauwIL36ww=
+    - secure: Vb8plC/X1ygiFTgXc3kJoAB813XOGw/fwN1xJavVdJ4lRkH0IewmChvrkA2teVfT/CcudyHtAAEYp16MUYkVVxB8kbTP6LveXF8Zort77Mh2bjBJQ/ybpOWak4UaLEWA+s+3GEL8/BmdW+vkzpHiZ/r8NWCDjUwfY+8z5Iiissk=
+
+before_install:
+  - apt-get install ncftp
+
+before_script:
+  - npm install
+  - ./node_modules/.bin/bower install
+
+script: ./node_modules/.bin/harp compile
+
+after_success:
+  - "ncftpput -R -v -u $FTP_USER -p $FTP_PASSWORD $FTP_HOST / www/*"
