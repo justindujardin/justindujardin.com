@@ -10,11 +10,11 @@ env:
 
 before_install:
   - sudo apt-get install ncftp
-  - npm install -g bower typescript@1.5.0-alpha
+  - sudo npm install -g typescript@1.5.0-alpha
 
 before_script:
   - npm install
-  - bower install
+  - ./node_modules/.bin/bower install
   - cd public/pages && tsc && cd ../../
 
 script: ./node_modules/.bin/harp compile
