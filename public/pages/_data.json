@@ -5,27 +5,22 @@
   },
   "pow-core": {
     "title": "pow-core",
-    "blurb": "A set of Typescript classes and grunt tasks that are at the core of the other pow projects.",
+    "blurb": "A set of Typescript classes that are at the core of the other pow projects.",
     "github": "https://github.com/justindujardin/pow-core"
-  },
-  "pow-edit": {
-    "title": "pow-edit",
-    "blurb": "A tilemap editor written in Typescript, using LESS and AngularJS, that runs as both a native application and a deployed website.",
-    "github": "https://github.com/justindujardin/pow-edit"
   },
   "pow2": {
     "title": "pow2",
-    "blurb": "A 2D RPG game written in Typescript, using LESS and AngularJS, that deploys to Heroku.",
+    "blurb": "Game components built on pow-core and AngularJS, that deploy to Heroku.",
     "github": "https://github.com/justindujardin/pow2"
+  },
+  "pow-edit": {
+    "title": "pow-edit",
+    "blurb": "A tilemap editor built on pow-core and AngularJS, that runs as a native application and a website.",
+    "github": "https://github.com/justindujardin/pow-edit"
   },
   "acl": {
     "title": "acl",
-    "blurb": "A cross-platform C/C++ application core library, that is continuously tested on Windows, Mac and Linux.",
+    "blurb": "A cross-platform C/C++ application core library.",
     "github": "https://github.com/justindujardin/acl"
-  },
-  "binary-trunk": {
-    "title": "binary-trunk",
-    "blurb": "A set of CoffeeScript classes for modeling binary trees and laying them out visually.",
-    "github": "https://github.com/justindujardin/binary-trunk"
   }
 }

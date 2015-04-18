@@ -1,0 +1,27 @@
+#resource-objects, #time-timer {
+  background-color: #eef;
+  width: 100%;
+}
+
+#time-timer {
+  height: 200px;
+  text-align: center;
+  padding-top: 1em;
+  font-size: 4em;
+  vertical-align: middle;
+}
+
+#resource-objects {
+  audio, img {
+    display: block;
+  }
+  img {
+    width: 128px;
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+}
