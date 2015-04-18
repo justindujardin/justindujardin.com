@@ -10,14 +10,12 @@ env:
 
 before_install:
   - sudo apt-get install ncftp
+  - npm install -g bower typescript@1.5.0-alpha
 
 before_script:
   - npm install
-  - ./node_modules/.bin/bower install
-  # Remove all the bower install files except the bootstrap.min.css file.
-  - cp ./public/vendor/bootstrap/dist/css/bootstrap.min.css ./bootstrap.min.css
-  - rm -rf ./public/vendor/ && mkdir -p ./public/vendor/bootstrap/dist/css/
-  - mv ./bootstrap.min.css ./public/vendor/bootstrap/dist/css/
+  - bower install
+  - cd public/pages && tsc && cd ../../
 
 script: ./node_modules/.bin/harp compile
 
