@@ -10,7 +10,7 @@ env:
 
 before_install:
   - sudo apt-get install ncftp
-  - sudo npm install -g typescript@1.5.0-alpha
+  - npm install -g typescript@1.5.0-alpha
 
 before_script:
   - npm install
