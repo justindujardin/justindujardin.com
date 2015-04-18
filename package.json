@@ -3,9 +3,6 @@
   "version": "0.0.0",
   "description": "Personal site of Justin DuJardin",
   "main": "index.js",
-  "scripts": {
-    "deploy": "sh deploy.sh"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/justindujardin/justindujardin.com.git"

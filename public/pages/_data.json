@@ -8,15 +8,15 @@
     "blurb": "A set of Typescript classes and grunt tasks that are at the core of the other pow projects.",
     "github": "https://github.com/justindujardin/pow-core"
   },
-  "pow2": {
-    "title": "pow2",
-    "blurb": "A 2D RPG game written in Typescript, using LESS and AngularJS, that deploys to Heroku.",
-    "github": "https://github.com/justindujardin/pow2"
-  },
   "pow-edit": {
     "title": "pow-edit",
     "blurb": "A tilemap editor written in Typescript, using LESS and AngularJS, that runs as both a native application and a deployed website.",
     "github": "https://github.com/justindujardin/pow-edit"
+  },
+  "pow2": {
+    "title": "pow2",
+    "blurb": "A 2D RPG game written in Typescript, using LESS and AngularJS, that deploys to Heroku.",
+    "github": "https://github.com/justindujardin/pow2"
   },
   "acl": {
     "title": "acl",
