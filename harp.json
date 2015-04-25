@@ -3,6 +3,7 @@
       "name"  : "Justin DuJardin",
       "description": "stuff and things",
       "url": "/a/",
+      "sitemapRoot": "http://www.justindujardin.com/a/",
       "githubUrl":"https://github.com/justindujardin",
       "twitterUrl":"https://twitter.com/justindujardin"
    }

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<%
+/**
+ * Convert a Date object to a string, according to W3C date time format: yyyy-mm-ddThh:ii:ss+zz:zz
+ *
+ * @memberOf Date
+ * @access public
+ * @license MIT
+ * @copyright 2013 Tristan Lins
+ * @author Tristan Lins <tristan.lins@bit3.de>
+ * @link https://gist.github.com/tristanlins/6585391
+ */
+Date.prototype.toW3CString=function(){var f=this.getFullYear();var e=this.getMonth();e++;if(e<10){e="0"+e}var g=this.getDate();if(g<10){g="0"+g}var h=this.getHours();if(h<10){h="0"+h}var c=this.getMinutes();if(c<10){c="0"+c}var j=this.getSeconds();if(j<10){j="0"+j}var d=-this.getTimezoneOffset();var b=Math.abs(Math.floor(d/60));var i=Math.abs(d)-b*60;if(b<10){b="0"+b}if(i<10){i="0"+i}var a="+";if(d<0){a="-"}return f+"-"+e+"-"+g+"T"+h+":"+c+":"+j+a+b+":"+i};
+var filter = /(\.html$)/;
+function tree(head, tail, files) {
+  for (var key in head) {
+    var val = head[key];
+    if (key !== '.git' && key !== '_data') {
+      if (key == '_contents') {
+        for (var i in val) {
+          var file = val[i];
+          if (filter.test(file) && !/^404\.html/.test(file)) {
+            files.push(tail + file);
+          }
+        }
+      } else {
+        tree(val, tail + key + "/", files);
+      }
+    }
+  }
+}
+%>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <% var files = []; tree(public, "", files); for(var i = 0; i < files.length; i++) { var file = files[i]; %>
+  <url>
+    <loc><%= sitemapRoot + file %></loc>
+    <lastmod><%= new Date().toW3CString() %></lastmod>
+  </url>
+  <% } %>
+</urlset>
