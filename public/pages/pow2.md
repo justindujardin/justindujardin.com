@@ -4,7 +4,13 @@
 
 Pow2 contains a set of game components and example game implementations:
 
-<div class="heroku-apps">
+<section class="heroku-apps">
   <a class="rpg" href="https://pow2.herokuapp.com/" target="_blank">RPG</a>
   <a class="dorkapon" href="https://pow2.herokuapp.com/dorkapon" target="_blank">Dorkapon</a>
-</div>
+</section>
+
+<section class="sponsors">
+  <h1>Pow2 development is sponsored by JetBrains</h1>
+  <a href="https://www.jetbrains.com/" target="_blank"><img src="../images/logo_jetbrains.svg" width="256"></a>
+  <a href="https://www.jetbrains.com/webstorm/" target="_blank"><img src="../images/logo_webstorm.svg" width="256"></a>
+</section>
