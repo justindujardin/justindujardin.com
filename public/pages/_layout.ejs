@@ -1,7 +1,8 @@
+<% var title = current.source.replace(/\w*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}).replace(/-/g,' '); %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title><%- current.source %></title>
+  <title><%- title %></title>
   <%- partial('../partials/_head.ejs') %>
 </head>
 
