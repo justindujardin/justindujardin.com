@@ -10,9 +10,9 @@
   "author": "Justin DuJardin <justin@dujardinconsulting.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/justindujardin/justindujardin.com.git)/issues"
+    "url": "https://github.com/justindujardin/justindujardin.com/issues"
   },
-  "homepage": "https://github.com/justindujardin/justindujardin.com.git)",
+  "homepage": "http://justindujardin.com",
   "dependencies": {
     "harp": "git+https://github.com/justindujardin/harp.git",
     "bower": "1.4.1"
