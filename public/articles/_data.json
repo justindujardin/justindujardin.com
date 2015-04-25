@@ -5,6 +5,6 @@
   },
   "angular-directive-multiple-requires": {
     "title": "AngularJS directive multiple controller requires",
-    "blurb": "for when you need to require ancestral controllers and your own."
+    "blurb": "for when you need to require parent controllers and your own."
   }
 }
