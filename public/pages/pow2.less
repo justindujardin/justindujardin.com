@@ -1,3 +1,5 @@
+@import "../app";
+
 .heroku-apps {
   margin: 2em 0;
   width: 100%;
@@ -22,8 +24,21 @@
 .sponsors {
   text-align: center;
   h1 {
-    margin-top:2em;
-    margin-bottom:0;
+    margin-top: 2em;
+    margin-bottom: 0;
     color: rgba(20, 20, 20, 0.8);
+  }
+}
+
+@media screen and (max-width: @screen-sm-max) {
+  .heroku-apps {
+    height: auto;
+    a.rpg, a.dorkapon {
+      display: block;
+      width: 95%;
+      padding: 1em;
+      margin-bottom:10px;
+      border-color: #222222;
+    }
   }
 }
