@@ -177,10 +177,11 @@ module jd {
             object.box.point.add(object.velocity);
 
             if (updatePosition) {
-              var xform = 'translate(' + object.box.point.x + 'px,' + object.box.point.y + 'px)';
-              object.element.style['-moz-transform'] = xform;
-              object.element.style['-webkit-transform'] = xform;
-              object.element.style['transform'] = xform;
+              var style:any = object.element.style;
+              var xform:string = 'translate(' + object.box.point.x + 'px,' + object.box.point.y + 'px)';
+              style['-moz-transform'] = xform;
+              style['-webkit-transform'] = xform;
+              style['transform'] = xform;
             }
 
           }
