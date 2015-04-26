@@ -1,5 +1,4 @@
-///<reference path="../vendor/pow-core/lib/pow-core.d.ts"/>
-
+///<reference path="../../../bower_components/pow-core/lib/pow-core.d.ts"/>
 
 module jd {
 
