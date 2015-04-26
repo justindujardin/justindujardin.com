@@ -1,0 +1,60 @@
+@import "../app";
+
+@boxSize: 21px;
+
+.pow-demo {
+  position: relative;
+  display: none;
+
+}
+
+#resource-objects, #time-timer {
+  background-color: #eef;
+  width: 100%;
+}
+
+#spatial-objects {
+  position: relative;
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  background-color: #eef;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  > div {
+    width: @boxSize;
+    height: @boxSize;
+    position: absolute;
+    border: 2px solid;
+    border-color: @background-base-color;
+    &.collide {
+      border-color: @background-contrast-color;
+    }
+
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+  }
+}
+
+#time-timer {
+  height: 200px;
+  text-align: center;
+  padding-top: 1em;
+  font-size: 4em;
+  vertical-align: middle;
+}
+
+#resource-objects {
+  audio, img {
+    display: block;
+  }
+  img {
+    width: 128px;
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+}

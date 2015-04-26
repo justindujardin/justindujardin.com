@@ -1,0 +1,37 @@
+<%
+  var title = current.source.replace(/\w*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}).replace(/-/g,' ');
+  var blurb = public.a.articles._data[current.source].blurb;
+%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%- title %> - Justin DuJardin</title>
+  <link rel="canonical" href="<%-sitemapRoot%>a/articles/<%-current.source%>.html" />
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "headline": "<%- title %>",
+    "description": "<%- blurb %>"
+  }
+  </script>
+
+  <%- partial('../partials/_head.ejs') %>
+</head>
+
+<body class="article">
+
+<%- partial('../partials/_header.ejs') %>
+
+<section class="container" id="article">
+  <%- yield %>
+</section>
+
+<section class="container" id="comments">
+  <%- partial('../partials/_disqus.ejs') %>
+</section>
+
+<%- partial('../partials/_footer.ejs') %>
+
+</body>
+</html>

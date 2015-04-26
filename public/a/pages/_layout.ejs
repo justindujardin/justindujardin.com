@@ -3,7 +3,16 @@
 <html lang="en">
 <head>
   <title><%- title %></title>
-  <link rel="canonical" href="<%-sitemapRoot%>pages/<%-current.source%>.html" />
+  <link rel="canonical" href="<%-sitemapRoot%>a/pages/<%-current.source%>.html" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "headline": "<%- title %>",
+    "description": "<%- blurb %>"
+  }
+  </script>
   <%- partial('../partials/_head.ejs') %>
 </head>
 
@@ -13,7 +22,7 @@
 
 <section class="container" id="article">
   <header>
-    <% var data = public.pages._data[current.source]; if(data && data.github){ %>
+    <% var data = public.a.pages._data[current.source]; if(data && data.github){ %>
     <a class="project-link" title="View project on Github" href="<%- data.github %>" target="_blank"><i
         class="fa fa-github"></i></a>
     <% } %>

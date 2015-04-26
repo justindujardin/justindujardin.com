@@ -2,8 +2,8 @@
    "globals": {
       "name"  : "Justin DuJardin",
       "description": "stuff and things",
-      "url": "/a/",
-      "sitemapRoot": "http://www.justindujardin.com/a/",
+      "url": "/",
+      "sitemapRoot": "http://www.justindujardin.com/",
       "githubUrl":"https://github.com/justindujardin",
       "twitterUrl":"https://twitter.com/justindujardin"
    }
