@@ -21,4 +21,4 @@ before_script:
 script: ./node_modules/.bin/harp compile
 
 after_success:
-  - "ncftpput -R -v -u $FTP_USER -p $FTP_PASSWORD $FTP_HOST /a/ www/*"
+  - "ncftpput -R -v -u $FTP_USER -p $FTP_PASSWORD $FTP_HOST / www/*"
