@@ -1,6 +1,6 @@
 <%
   var title = current.source.replace(/\w*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}).replace(/-/g,' ');
-  var blurb = public.a.articles._data[current.source].blurb;
+  var blurb = public.a.articles._data[current.source] ? public.a.articles._data[current.source].blurb : '';
 %>
 <!DOCTYPE html>
 <html lang="en">
