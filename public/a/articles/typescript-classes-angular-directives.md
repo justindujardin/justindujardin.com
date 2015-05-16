@@ -5,9 +5,9 @@ Marrying typescript classes and Angular directives in a sane manner.
 
 ---
 
-### Here's what I came up with that feels pretty good:
+Here's what I came up with that feels pretty good:
 
-```javascript
+```typescript
 module MyApp {
   declare var angular;
   var app = angular.module('yourApp',[]);
