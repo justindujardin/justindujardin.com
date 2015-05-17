@@ -1,0 +1,116 @@
+@import "_style/include";
+@import "_style/scaffolding";
+@import "_style/normalize";
+@import "_style/type-critical";
+@import "partials/_header";
+
+::-moz-selection {
+  background: @background-contrast-color;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: @background-contrast-color;
+  color: #fff;
+  text-shadow: none;
+}
+
+svg {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden !important;
+  body {
+    overflow-x: hidden !important;
+  }
+}
+
+body {
+  > svg.triangleDown {
+    margin-top: -1px;
+  }
+
+  section {
+    position: relative;
+    &::before, &::after {
+      position: absolute;
+      content: '';
+      pointer-events: none;
+    }
+    h2 {
+      font-weight: 400;
+    }
+    p {
+      line-height: 1.5;
+    }
+  }
+
+  .container {
+    padding-left:@grid-gutter-width / 2;
+    padding-right:@grid-gutter-width / 2;
+  }
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: @footer-height + @footer-spacing;
+}
+
+
+main {
+  position: relative;
+  &::before, &::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+  }
+  z-index: 1;
+  background: @background-darker;
+  section {
+    position: relative;
+    padding: @section-padding;
+    text-align: center;
+  }
+  .page-summary {
+    z-index: 1;
+    text-transform: lowercase;
+    h1 {
+      color: rgba(255, 255, 255, 0.95);
+      font-weight: 400;
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+        color: darken(@font-color, 15%);
+      }
+    }
+    p {
+      color: rgba(255, 255, 255, 0.6);
+      text-shadow: -1px -1px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+body.index {
+  aside svg.triangleDown {
+    background-color: @background-darker;
+  }
+  main {
+    margin-top: -5px; // HACKS
+  }
+  section {
+    a {
+      color: @font-color;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import "variables";
+@import "mixins";
+
+@background-base-color: #009be9;
+// #2980B9 - blue, #9947b7 - purple
+
+@background-dark: darken(@background-base-color, 3%);
+@background-darker: darken(@background-base-color, 10%);
+@background-darkest: darken(@background-base-color, 20%);
+
+@background-light: lighten(@background-base-color, 3%);
+@background-lighter: lighten(@background-base-color, 10%);
+@background-lightest: lighten(@background-base-color, 20%);
+
+@background-contrast-color: spin(@background-base-color, 180%);
+
+@font-color: #fff;
+@footer-color: @background-darker;
+@font-color-alt: @footer-color;
+
+@link-color: rgba(red(@background-base-color), green(@background-base-color), blue(@background-base-color), 0.7);
+
+@header-padding: 5em 0 3em 0;
+@footer-padding: 3em 0 5em 0;
+@section-padding: 6em 10%;
+
+// Controls the footer size
+@footer-height: 15em;
+@footer-spacing: 5em;
+
+// Opacity
+.opacity(@opacity) {
+  opacity: @opacity;
+  // IE8 filter
+  @opacity-ie: (@opacity * 100);
+  filter: ~"alpha(opacity=@{opacity-ie})";
+}
