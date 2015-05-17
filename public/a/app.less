@@ -107,21 +107,16 @@ body {
   }
 
   section {
-    //font-family: 'Roboto', sans-serif;
     position: relative;
     &::before, &::after {
       position: absolute;
       content: '';
       pointer-events: none;
     }
-    a {
-    }
     h2 {
-      font-size: 2.8em;
       font-weight: 400;
     }
     p {
-      font-size: 1.3em;
       line-height: 1.5;
     }
   }
@@ -164,7 +159,6 @@ main {
     text-transform: lowercase;
     h1 {
       color: rgba(255, 255, 255, 0.95);
-      font-size: 2.8em;
       font-weight: 400;
     }
     a {
@@ -182,25 +176,12 @@ main {
       margin-bottom: 2em;
     }
 
-    &:nth-child(2) {
-      background-color: @background-darkest;
-    }
-    &:nth-child(3) {
-      background-color: @background-darker;
-    }
-    &:nth-child(4) {
-      background-color: @background-darkest;
-    }
-    &:nth-child(5) {
-      background-color: @background-darker;
-    }
-    &:nth-child(6) {
-      background-color: @background-darkest;
-    }
-    &:nth-child(7) {
-      background-color: @background-darker;
-    }
-
+    &:nth-child(2) { background-color: @background-darkest; }
+    &:nth-child(3) { background-color: @background-darker; }
+    &:nth-child(4) { background-color: @background-darkest; }
+    &:nth-child(5) { background-color: @background-darker; }
+    &:nth-child(6) { background-color: @background-darkest; }
+    &:nth-child(7) { background-color: @background-darker; }
     &:last-child {
       background: none;
       background-color: @font-color;

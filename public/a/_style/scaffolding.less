@@ -30,6 +30,9 @@ body {
   line-height: @line-height-base;
   color: @text-color;
   background-color: @body-bg;
+  @media (max-width: @screen-sm-min) {
+    font-size: @font-size-base * @font-size-mobile-body-modifier;
+  }
 }
 
 // Reset fonts for relevant elements
