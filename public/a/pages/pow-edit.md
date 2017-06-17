@@ -18,4 +18,4 @@ The native application is built on top of node-webkit [v0.10.5](https://groups.g
 
 ### Deployed Version
 
-You can find the latest deployed version <a class="rpg" href="http://pow-edit.herokuapp.com/" target="_blank">here</a>.
+You can find the latest deployed version <a class="rpg" href="http://pow-edit.herokuapp.com/" target="_blank" rel="noopener">here</a>.

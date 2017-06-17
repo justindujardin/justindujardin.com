@@ -27,8 +27,9 @@
 <section class="container" id="article">
   <header>
     <% var data = public.a.pages._data[current.source]; if(data && data.github){ %>
-    <a class="project-link" title="View project on Github" href="<%- data.github %>" target="_blank"><i
-        class="demo-icon icon-github-circled"></i></a>
+    <a class="project-link" title="View project on Github" href="<%- data.github %>" target="_blank" rel="noopener">
+      <i class="demo-icon icon-github-circled"></i>
+    </a>
     <% } %>
   </header>
   <footer>
