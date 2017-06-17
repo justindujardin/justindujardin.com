@@ -13,7 +13,8 @@
     "url": "https://github.com/justindujardin/justindujardin.com/issues"
   },
   "scripts": {
-    "start": "harp server"
+    "start": "harp server",
+    "build": "rm -rf ./www && ./node_modules/.bin/harp compile"
   },
   "homepage": "http://justindujardin.com",
   "dependencies": {
