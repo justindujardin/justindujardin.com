@@ -12,9 +12,12 @@
   "bugs": {
     "url": "https://github.com/justindujardin/justindujardin.com/issues"
   },
+  "scripts": {
+    "start": "harp server"
+  },
   "homepage": "http://justindujardin.com",
   "dependencies": {
     "harp": "git+https://github.com/justindujardin/harp.git",
-    "bower": "1.4.1"
+    "node-sass": "4.5.3"
   }
 }
