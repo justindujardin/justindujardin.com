@@ -2,16 +2,19 @@
   "page-load-optimization-tips": {
     "title": "Rendering Pages In Less Than A Second",
     "blurb": "general tips for optimizing pages to load in less than 1000 milliseconds.",
-    "date": "2015-05-17"
+    "date": "2015-05-17",
+    "updated": "2015-05-17"
   },
   "typescript-classes-angular-directives": {
     "title": "Typescript Classes With AngularJS Directives",
     "blurb": "so you can create directive controller classes with dependency injection.",
-    "date": "2015-03-22"
+    "date": "2015-03-22",
+    "updated": "2015-03-22"
   },
   "angular-directive-multiple-requires": {
     "title": "AngularJS Directive Multiple Controller Requires",
     "blurb": "for when you need to require parent controllers and your own.",
-    "date": "2015-04-06"
+    "date": "2015-04-06",
+    "updated": "2015-04-06"
   }
 }

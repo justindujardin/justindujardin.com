@@ -1,25 +1,41 @@
 <script type="application/ld+json">
-{ "@context" : "http://schema.org",
-  "@type" : "Person",
-  "name" : "Justin DuJardin",
-  "jobTitle":"Chief Architect, Sococo",
-  "url" : "https://www.justindujardin.com",
-  "image": "https://www.justindujardin.com/justin.png",
-  "sameAs" : [
-    "https://www.linkedin.com/in/justindujardin",
-    "https://www.twitter.com/justindujardin",
-    "https://www.facebook.com/justindujardin",
-    "https://www.github.com/justindujardin",
-    "https://www.coveralls.io/r/justindujardin"
-  ]
-}
+    {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Justin DuJardin",
+        "jobTitle": "Chief Architect, Sococo",
+        "url": "<%- sitemapRoot %>",
+        "image": "<%- sitemapRoot %>justin.png",
+        "sameAs": [
+            "https://www.linkedin.com/in/justindujardin",
+            "https://www.twitter.com/justindujardin",
+            "https://www.facebook.com/justindujardin",
+            "https://www.github.com/justindujardin",
+            "https://www.coveralls.io/r/justindujardin"
+        ]
+    }
 </script>
 <script type="application/ld+json">
-{ "@context" : "http://schema.org",
-  "@type" : "WebSite",
-  "name" : "Justin DuJardin",
-  "image": "https://www.justindujardin.com/justin.png",
-  "alternateName" : "Personal Site of Justin DuJardin",
-  "url" : "https://www.justindujardin.com"
-}
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Justin DuJardin",
+        "image": "<%- sitemapRoot %>justin.png",
+        "alternateName": "Personal Site of Justin DuJardin",
+        "url": "<%- sitemapRoot %>"
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "Organization",
+        "name": "DuJardin Consulting",
+        "url": "<%- sitemapRoot %>",
+        "logo": {
+            "@type": "imageObject",
+            "url": "<%- sitemapRoot %>djc-logo.png",
+            "width": "574",
+            "height": "408"
+        }
+    }
 </script>

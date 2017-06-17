@@ -1,23 +1,54 @@
 <%
-  var title = current.source.replace(/\w*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}).replace(/-/g,' ');
-  var blurb = public.a.articles._data[current.source] ? public.a.articles._data[current.source].blurb : '';
+function assertValue(value, error) {
+    if (!value) {
+        throw new Error(error);
+    }
+    return value;
+}
+var title = current.source.replace(/\w*/g, function (txt) {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+}).replace(/-/g, ' ');
+var blurb = assertValue(public.a.articles._data[current.source].blurb, 'must have a "blurb"');
+var datePublished = assertValue(public.a.articles._data[current.source].date, 'must have a "date" published');
+var dateUpdated = assertValue(public.a.articles._data[current.source].updated, 'must have an "updated" date');
+var pageUrl = sitemapRoot + 'a/articles/' + current.source + '.html';
 %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title><%- title %> - Justin DuJardin</title>
-  <link rel="canonical" href="<%-sitemapRoot%>a/articles/<%-current.source%>.html" />
-  <meta name="description" content="<%- blurb %>">
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "NewsArticle",
-    "headline": "<%- title %>",
-    "description": "<%- blurb %>"
-  }
-  </script>
+    <title><%- title %> - Justin DuJardin</title>
+    <link rel="canonical" href="<%- pageUrl %>"/>
+    <meta name="description" content="<%- blurb %>">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "blogPosting",
+            "headline": "<%- title %>",
+            "description": "<%- blurb %>",
+            "author": "Justin DuJardin",
+            "mainEntityOfPage": "<%- pageUrl %>",
+            "datePublished": "<%- datePublished %>",
+            "dateModified": "<%- dateUpdated %>",
+            "image": {
+                "@type": "imageObject",
+                "url": "<%- sitemapRoot %>djc-logo.png",
+                "width": "574",
+                "height": "408"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "DuJardin Consulting",
+                "logo": {
+                    "@type": "imageObject",
+                    "url": "<%- sitemapRoot %>djc-logo.png",
+                    "width": "574",
+                    "height": "408"
+                }
+            }
+        }
+    </script>
 
-  <%- partial('../partials/_head.ejs') %>
+    <%- partial('../partials/_head.ejs') %>
 </head>
 
 <body class="article">
@@ -25,11 +56,11 @@
 <%- partial('../partials/_header.ejs') %>
 
 <section class="container" id="article">
-  <%- yield %>
+    <%- yield %>
 </section>
 
 <section class="container" id="comments">
-  <%- partial('../partials/_disqus.ejs') %>
+    <%- partial('../partials/_disqus.ejs') %>
 </section>
 
 <%- partial('../partials/_footer.ejs') %>
